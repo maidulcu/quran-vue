@@ -1,0 +1,521 @@
+// Here you can add other styles
+
+@font-face {
+  font-family: 'me_quranregular';
+  src: url('~@/assets/font/me_quran-webfont-webfont.woff2') format('woff2'),
+       url('~@/assets/font/me_quran-webfont-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'learn_quran_icon';
+  src: url('~@/assets/font/learn_quran_icon.eot?22195902');
+  src: url('~@/assets/font/learn_quran_icon.eot?22195902#iefix') format('embedded-opentype'),
+       url('~@/assets/font/learn_quran_icon.woff?22195902') format('woff'),
+       url('~@/assets/font/learn_quran_icon.ttf?22195902') format('truetype'),
+       url('~@/assets/font/learn_quran_icon.svg?22195902#learn_quran_icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body.font-mequran {
+    font-family: 'me_quranregular' !important;
+}
+
+body {
+    font-size: 16px;
+    background-color: #f9f9f6;
+}
+a {
+  color: $color-green;
+}
+.quran-icon
+{
+  font-family: "learn_quran_icon";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.navbar-brand>span {
+    color: $color-green;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-nav .nav-link {
+    color: $color-black;
+}
+
+.sidebar {
+    background: #f7f7f7;
+}
+.sidebar .nav-link {
+  color: $color-black;
+}
+.sidebar-nav .active a {
+  color: $color-green;
+}
+.sidebar .nav-link:hover {
+  color: #fff;
+  background: $color-green-v3;
+}
+.pagination-link.nav-link {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 35px;
+  color: #2b363d;
+  font-size: 0.85rem;
+  font-weight: 500;
+  i {
+    margin-left: 4px;
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+  i.icon-arrow-left{
+    margin-left: 0;
+    margin-right: 4px;
+  }
+}
+
+.top-right-bar button,
+.top-right-bar a {
+  text-transform: uppercase;
+  font-size: .85rem;
+  font-weight: 600;
+  color: $color-green-v2;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  &:hover {
+    color: $color-green-v3;
+    text-decoration: none;
+}
+}
+
+.edition-meta {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    width: auto;
+    display: inline-block;
+    color: $color-green;
+}
+.text-arabic {
+  white-space: pre-line;
+  color: #000;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  text-align: right;
+  direction: rtl;
+  font-family: 'me_quranregular', sans-serif;
+}
+.text-arabic .language-type-ar p {
+    font-size: 2rem;
+    line-height: 2.2;
+}
+.text-others p {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.basmala {
+    max-width: 175px;
+    margin: 0 auto;
+}
+.basmala>svg{
+  width: 100%;
+  height: auto;
+}
+
+.language-type-ar{
+  overflow-wrap: break-word;
+  word-break: break-all;
+  text-align: right;
+  direction: rtl;
+}
+.language-type-ar p {
+    white-space: pre-line;
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+.ayah-ending {
+    position: relative;
+    margin-right: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.ayah-number {
+    position: absolute;
+    font-size: 40%;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.ayah-meta .sura-no{
+  .label-default{
+    background-color: transparent;
+    font-weight: 400;
+    color: $color-green;
+  }
+  a{
+    padding: 0;
+    span{
+      padding: 5px 8px;
+    }
+  }
+}
+
+.ayah-meta button {
+    border: 1px solid #8f9ba5;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    color: $color-green-v3;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.ayah-meta button:hover {
+  opacity: 0.85;
+}
+.ayah-meta .favorite {
+    color: $color-green-v2;
+}
+
+.sidebar-nav .active a{
+  color: $color-green;
+}
+
+
+.sidebar-nav .arabic-name {
+    display: block;
+    margin-left: 30px;
+}
+
+.left-sidebar{
+  a {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    transition: 0.2s;
+    &:hover{
+      background: $color-green-v2;
+      color: $white;
+    }
+  }
+  a.router-link-exact-active{
+    background: $color-green-v2;
+    color: $white;
+  }
+} 
+
+.identifier {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  input {
+    vertical-align: top;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+  label>span{
+    display: block;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+  }
+}
+.surah-title{
+  color:$color-green-v3;
+  a{
+    color:$color-green-v3;
+    text-decoration: none;
+  }
+  .text-arabic{
+    float: right;
+    width: auto;
+    color:$color-green-v3;
+  }
+}
+
+/*search*/
+.top-search{
+  .form-control {
+    margin-right: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem;
+    min-width: 300px; 
+  }
+  .search-btn {
+    background: $color-primary;
+    color: $color-meta;
+    border-radius: 0 0.25rem 0.25rem 0;
+    .icon-magnifier{
+      color: $color-black;
+    }
+  }
+}
+.top-right-bar{
+  .custom-control-label::before {
+    border: #FFB200 solid 1px;
+  } 
+  .custom-switch .custom-control-label::after{
+    background-color: #FFB200;
+  }
+  .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: $color-black;
+    background-color: $color-black;
+  }
+  .custom-control-label {
+    vertical-align: top;
+    margin-top: 2px;
+    
+  }   
+}
+
+.app-header .navbar-nav .dropdown-menu-right {
+  max-height: 400px;
+  max-height: 60vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.sura-wrapper > .row:not(.pagination) {
+  background: $color-primary;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+}
+.row.pagination .col-6{
+  padding: 0;
+}
+.row.pagination .pagination-link.nav-link {
+  min-width: 150px;
+  text-align: center;
+}
+.row.pagination .col-6:first-child {
+  text-align: left;
+}
+.row.pagination .col-6:last-child {
+  text-align: right;
+}
+@media (max-width: 355px){
+  .row.pagination .pagination-link.nav-link {
+    min-width: auto;
+}
+}
+
+.list-group-item-accent-info {
+  border-left: 4px solid $color-green-v3;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: $color-green-v3;
+  background-color: $color-green-v3;
+}
+.ps.ps--in-scrolling.ps--y>.ps__scrollbar-y-rail>.ps__scrollbar-y {
+  background-color: $color-green-v3 !important;
+}
+.ps>.ps__scrollbar-y-rail>.ps__scrollbar-y {
+  background-color: $color-green-v3 !important;
+}
+.sidebar{
+  color: #23282c;
+  .custom-control-label{
+    font-size: 0.85rem;
+  }
+}
+.sidebar .nav.nav-tabs {
+  flex-direction: unset;
+}
+.sidebar .tab-content .tab-pane {
+  padding: 0.5rem;
+}
+.top-right-bar .dropdown-item.active, 
+.dropdown-item:active {
+
+  background-color: $color-green-v2;
+}
+.nav-tabs .nav-link.active:focus,
+.sidebar .nav-link.active {
+  background: $color-green-v2;
+}
+.sura-wrapper .icon-control-pause{
+  color: $color-green;
+}
+.color-black{
+  color: $color-black;
+}
+.desktop-sidebar-toggler::after { 
+  content: "Surahs";
+}
+.desktop-sidebar-toggler .navbar-toggler-icon{
+  display: none;
+}
+/*Home card*/
+.hero-banner{
+  background-color: #366736;
+  background: -webkit-linear-gradient(to bottom, #23282c, #366736);
+  background: linear-gradient(to bottom, #23282c, #366736);
+  padding: 5rem 0;
+}
+.calligraphy {
+  max-width: 350px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;  
+  svg{
+    width: 100%;
+    height: auto;
+  }
+
+}
+.card.bg-dark-green {
+  border-color: $color-green;
+  background-color: $color-green !important;
+  background: -webkit-linear-gradient(to bottom, #23282c, $color-green);
+  background: linear-gradient(to bottom, #23282c, $color-green);
+}
+.sura-lists .card-text:last-child {
+  font-size: 0.85rem;
+}
+.sura-lists{
+  .card{
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    border-color: transparent;
+    &:hover{
+      background-color: $color-primary !important;
+      -webkit-transition: background-color 100ms linear;
+      -ms-transition: background-color 100ms linear;
+      transition: background-color 100ms linear;  
+      opacity:0.85;   
+    }
+    .number-of-ayahs{
+      float: right;
+      font-size: 0.65rem;
+      line-height: 1.5rem;
+    }
+  }
+  .arabic-name,.english-name{
+    color: $color-green-v3;
+    font-size: 1.65rem;
+  }
+  .sura-link{
+    text-decoration: none;
+    &:hover{
+      color: $color-green-v2;
+    }
+  }  
+}
+.main .home-wrapper .container-fluid {
+  padding: 0;
+}
+
+@media (max-width: 991.98px){
+  .sidebar {
+      overflow-y: scroll;
+  }
+}
+@media (max-width: 991.98px){
+  .app-header .navbar-brand {
+    position: relative;
+    left: auto;
+    margin-left: 0;
+    width: 110px;
+}
+}
+
+@media (max-width: 650px){
+
+  .app-body .main {
+    margin: 0px;
+  }
+  .sura-wrapper{
+    margin: 0 20px;
+  }
+  .top-search {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    .form-control{
+      width: 100%;
+      border-radius: 0;
+    }
+    .form-inline {
+      position: relative;
+    }
+    .search-btn{
+      position: absolute;
+      right: 0;
+      top: 0px;     
+    }
+  }
+
+  .calligraphy {
+    max-width: 265px;
+  }
+  .surah-title {
+    font-size: 1.5rem;
+  }
+  .pagination-link.nav-link{
+    padding: 5px 10px;
+    i{
+      margin: 0;
+    }
+  } 
+}
+@media (min-width: 992px){
+  .sidebar-fixed .app-header + .app-body .sidebar {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .sidebar-fixed .sidebar .scroll-area {
+    position: relative;
+  }  
+}
+@media (max-width: 767px){
+  .surah-title .text-arabic {
+    float: left;
+  }  
+  .text-arabic .language-type-ar p{
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  .ayah-ending{
+    font-size: 1.5rem;
+  }
+}
